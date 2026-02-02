@@ -12,6 +12,11 @@ class HomePage extends StatelessWidget {
     MoneyController moneyController = Get.put(MoneyController());
     return Scaffold(
       appBar: AppBar(
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.vertical(
+            bottom: Radius.circular(30),
+          ),
+        ),
         backgroundColor: Colors.grey,
         centerTitle: true,
         title: Text(

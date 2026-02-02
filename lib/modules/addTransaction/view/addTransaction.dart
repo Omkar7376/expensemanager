@@ -11,6 +11,11 @@ class AddTransactionPage extends StatelessWidget {
     MoneyController moneyController = Get.put(MoneyController());
     return Scaffold(
       appBar: AppBar(
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.vertical(
+            bottom: Radius.circular(30),
+          ),
+        ),
         iconTheme: IconThemeData(color: Colors.white),
         backgroundColor: Colors.grey,
         title: Text(
